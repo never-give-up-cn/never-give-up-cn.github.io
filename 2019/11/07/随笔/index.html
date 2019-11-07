@@ -46,7 +46,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="/source/avatar.jpg" class="js-avatar">
+			<img src="/public/avatar.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">Chen Yan Hui</a></h1>
@@ -104,7 +104,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/source/avatar.jpg" class="js-avatar">
+				<img src="/public/avatar.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Chen Yan Hui</h1>
@@ -194,13 +194,13 @@
                   <div class="reward-box">
                     
                     <div class="reward-box-item">
-                      <img class="reward-img" src="/source/AliPayQR.png">
+                      <img class="reward-img" src="/public/AliPayQR.png">
                       <span class="reward-type">支付宝</span>
                     </div>
                     
                     
                     <div class="reward-box-item">
-                      <img class="reward-img" src="/source/WeChatQR.png">
+                      <img class="reward-img" src="/public/WeChatQR.png">
                       <span class="reward-type">微信</span>
                     </div>
                     
@@ -324,6 +324,22 @@
 
   
 
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "http://yoursite.com/2019/11/07/%E9%9A%8F%E7%AC%94/",
+  owner: 'never-give-up-cn',
+  repo: 'https://github.com/never-give-up-cn/comments.git',
+  oauth: {
+    client_id: '7d0262ba026bf5e63e8f',
+    client_secret: '89f5a1c444b74926b67b023636f090b69da11927',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
   
 
 

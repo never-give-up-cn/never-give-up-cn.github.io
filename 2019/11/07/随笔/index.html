@@ -412,30 +412,31 @@
 
 
 
-
+  <div id="giteement-ctn"></div>
   
-  <div id="gitment-ctn"></div>
-  
-    <!-- 中文 -->
-    <link rel="stylesheet" href="/lib/gitment.css">
-    <script src="/lib/gitment.js"></script>
+    <link rel="stylesheet" href="/lib/default.css">
+    <script src="/lib/giteement.browser.js"></script>
   
   <script>
-    <!-- id: "随笔" -->
-    var gitment = new Gitment({
-      id: "20191107162835",
-      owner: 'never-give-up-cn',
-      repo: 'git@github.com:never-give-up-cn/eeee.git',
-      oauth: {
-        client_id: 'b317074b2f0327b64e55',
-        client_secret: 'bcc41a08fda2a2ccb065483ce98dafdbdc45ad03',
-      },
-    })
-    gitment.render('gitment-ctn')
+  <!-- id: "随笔" -->
+  var giteement = new Giteement({
+    id: '20191107162835',
+    owner: 'never-give-up-cn',
+    repo: 'https://gitee.com/never-give-up-cn/giteement.git',
+    backcall_uri: 'http://never-give-up-cn.github.io',
+    oauth_uri: 'https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token',
+    oauth: {
+      client_id: 'c2fe3abc016daf6befdf4ffb0b2d75b75f9ffecbe60853995e606548ee8a6ac0',
+      client_secret: '80ac05d6513fe0a0adb04f74675aee0e5ae1dedf747985492104cc0639cd819c'
+    },
+  })
+  giteement.render('giteement-ctn')
   </script>
 
 
-  
+
+
+
 
 
 
